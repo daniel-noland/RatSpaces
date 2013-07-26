@@ -74,3 +74,8 @@ License
 
 I am putting this up under the MIT License.  See the LICENSE document
 for the full text of that license.
+
+RatSpaces
+=========
+
+This is a simple hack which helps me stomach the Ratpoison window manager's workspaces functionality, and generally aids in the manipulation of ratpoison windows.  I hope it is useful to someone else. 
