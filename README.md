@@ -20,32 +20,32 @@ your .ratpoisonrc file.
 
 The script accepts the following arguments:
 
-scan
+**scan**
 This displays a summary of all the windows in all the active workspaces.
 Like the built in 'windows' command, it places an \ next to the active
 window.  It also wraps the name of the active workspace with \'s.
 
-inc
+**inc**
 Move to the next workspace. That is increment the workspace.
 
-dec
+**dec**
 Move to the previous workspace. That is decrement the workspace.
 
-sendn
+**sendn**
 Send the current window to the next workspace.
 
-sendp
+**sendp**
 Send the current window to the previous workspace.
 
-follown
+**follown**
 Send the current window to the previous workspace. Also, move to the
 next workspace.  That is, follow to the next workspace.
 
-followp
+**followp**
 Send the current window to the previous workspace. Also, move to the
 previous workspace.  That is, follow to the previous workspace.
 
-swap
+**swap**
 Swap the current window with the first selected window on the next
 monitor.  This is especially useful if you only have two monitors (which
 I suspect covers most of us).
