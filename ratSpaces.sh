@@ -107,17 +107,31 @@ followWindowToPreviousGroup() {
 }
 
 # swap the active window on this monitor with screen on the next
+#swapScreens() {
+#   local currentWindow=$(getCurrentWindowNumber)
+#   ratpoison -c "select -"
+#   ratpoison -c "nextscreen"
+#   local otherWindow=$(getCurrentWindowNumber)
+#   # this is not optional if you want it to correctly swap to blank
+#   # windows.
+#   ratpoison -c "select -"
+#   ratpoison -c "select $currentWindow"
+#   ratpoison -c "prevscreen"
+#   ratpoison -c "select $otherWindow"
+#}
+
+# swap the active window on this monitor with screen on the next
 swapScreens() {
-   local currentWindow=$(getCurrentWindowNumber)
+   local firstScreenNumber=$(ratpoison -c info | sed -e 's/.*\([0-9]\)(.*/\.*1/')
+   local firstFDump=$(ratpoison -c "fdump")
    ratpoison -c "select -"
    ratpoison -c "nextscreen"
-   local otherWindow=$(getCurrentWindowNumber)
-   # this is not optional if you want it to correctly swap to blank
-   # windows.
+   local secondScreenNumber=$(ratpoison -c info | sed -e 's/.*\([0-9]\)(.*/\.*1/')
+   local secondFDump=$(ratpoison -c "fdump")
    ratpoison -c "select -"
-   ratpoison -c "select $currentWindow"
+   ratpoison -c "frestore $firstFDump"
    ratpoison -c "prevscreen"
-   ratpoison -c "select $otherWindow"
+   ratpoison -c "frestore $secondFDump"
 }
 
 # pick action based on incoming argument
