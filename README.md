@@ -55,16 +55,14 @@ Example
 
 You could (if you are like me) configure your .ratpoisonrc like so:
 
-...
-bind w ecec ratSpaces.sh scan
-bind comma exec ratSpaces.sh dec
-bind period exec ratSpaces.sh inc
-bind greater exec ratSpaces.sh sendn
-bind less exec ratSpaces.sh sendp
-bind C-period exec ratSpaces.sh follown
-bind C-comma exec ratSpaces.sh followp
-bind slash exec ratSpaces.sh swap
-...
+    bind w ecec ratSpaces.sh scan
+    bind comma exec ratSpaces.sh dec
+    bind period exec ratSpaces.sh inc
+    bind greater exec ratSpaces.sh sendn
+    bind less exec ratSpaces.sh sendp
+    bind C-period exec ratSpaces.sh follown
+    bind C-comma exec ratSpaces.sh followp
+    bind slash exec ratSpaces.sh swap
 
 Then simply add the ratSpaces.sh script to your PATH and start
 experimenting.
