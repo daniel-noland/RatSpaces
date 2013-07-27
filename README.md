@@ -17,10 +17,6 @@ The script is entirely self contained and requires only that you have
 ratpoison running (obviously).  The script can be called from the
 command line, but it is MUCH more effective to bind it to hot keys in
 your .ratpoisonrc file.
-\begin{equation}
-\label{eq:randomEquation}
-int_x^y\!mathrm{d}z \Gamma\!(z) = \Delta(x,y)
-\end{equation}
 
 The script accepts the following arguments:
 
