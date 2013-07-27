@@ -84,9 +84,3 @@ License
 
 I am putting this up under the MIT License.  See the LICENSE document
 for the full text of that license.
-
-Logo
-----
-
-My aviatar is not the logo for this project.  This project has no logo.  Here is a simple markdown test.
-![avitar][fig:anImage](drive/images/RatPoison2.png)
