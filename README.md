@@ -17,38 +17,50 @@ The script is entirely self contained and requires only that you have
 ratpoison running (obviously).  The script can be called from the
 command line, but it is MUCH more effective to bind it to hot keys in
 your .ratpoisonrc file.
+\begin{equation}
+\label{eq:randomEquation}
+int_x^y\!mathrm{d}z \Gamma\!(z) = \Delta(x,y)
+\end{equation}
 
 The script accepts the following arguments:
 
 **scan**
-This displays a summary of all the windows in all the active workspaces.
-Like the built in 'windows' command, it places an \ next to the active
-window.  It also wraps the name of the active workspace with \'s.
+
+>This displays a summary of all the windows in all the active workspaces.
+>Like the built in 'windows' command, it places an \* next to the active
+>window.  It also wraps the name of the active workspace with \*'s.
 
 **inc**
-Move to the next workspace. That is increment the workspace.
+
+>Move to the next workspace. That is increment the workspace.
 
 **dec**
-Move to the previous workspace. That is decrement the workspace.
+
+>Move to the previous workspace. That is decrement the workspace.
 
 **sendn**
-Send the current window to the next workspace.
+
+>Send the current window to the next workspace.
 
 **sendp**
-Send the current window to the previous workspace.
+
+>Send the current window to the previous workspace.
 
 **follown**
-Send the current window to the previous workspace. Also, move to the
-next workspace.  That is, follow to the next workspace.
+
+>Send the current window to the previous workspace. Also, move to the
+>next workspace.  That is, follow to the next workspace.
 
 **followp**
-Send the current window to the previous workspace. Also, move to the
-previous workspace.  That is, follow to the previous workspace.
+
+>Send the current window to the previous workspace. Also, move to the
+>previous workspace.  That is, follow to the previous workspace.
 
 **swap**
-Swap the current window with the first selected window on the next
-monitor.  This is especially useful if you only have two monitors (which
-I suspect covers most of us).
+
+>Swap the current window with the first selected window on the next
+>monitor.  This is especially useful if you only have two monitors (which
+>I suspect covers most of us).
 
 Example 
 -------
@@ -73,3 +85,8 @@ License
 I am putting this up under the MIT License.  See the LICENSE document
 for the full text of that license.
 
+Logo
+----
+
+My aviatar is not the logo for this project.  This project has no logo.  Here is a simple markdown test.
+![avitar][fig:anImage](drive/images/RatPoison2.png)
